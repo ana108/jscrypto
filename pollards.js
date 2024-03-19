@@ -9,6 +9,7 @@ function pPlusOne(B, n) {
         }
         d = gcd_two_numbers(m - BigInt(1), BigInt(n))
         if (d > 1 && d < n) {
+            console.log('J ', j)
             return d
         }
     }
@@ -80,5 +81,5 @@ function gcd_two_numbers(x, y) {
     return x;
 }
 let n = 71201983;
-let b = 100;
-console.log(pPlusOne(b, n))
+let b = 12;//100;
+console.log(pPlusOne(b, n).toString())
